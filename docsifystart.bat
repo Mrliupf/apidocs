@@ -1,1 +1,1 @@
-docsify serve  D:\test\docsifyapi
+docsify serve  D:\test\docsifyapi\xiaomangapi

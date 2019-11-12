@@ -34,7 +34,7 @@
 		action:useraddremark
 		noteid 收藏id
 		remark 备注
-		userid 用户id
+		userid 用户id+“”
 
 ## 取消收藏
 	参数：
@@ -42,16 +42,27 @@
 		noteid 收藏id
 		userid 用户id
 
-## 添加自定义收藏公司
+## 添加收藏公司
 	参数：
 		action:useraddcompany
+		userid 用户id
 		tagid 当前标签id
 		companyname 公司名称
 		country 所属国家
 		companyaddress 公司地址
 		telphone 电话
 		website 网址
+
+## 修改收藏公司信息
+	参数：
+		action:userupdatecompany
 		userid 用户id
+		noteid 收藏id
+		companyid 公司id
+		country 所属国家
+		companyaddress 公司地址
+		telphone 电话
+		website 网址
 
 ## 获取标签下公司联系人列表
 	参数：
