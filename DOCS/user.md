@@ -4,8 +4,8 @@
 ## 登录
     参数：
 		action:login
-		username 用户名  17701759687
-		password 密码    qqqq1111
+		username 用户名  
+		password 密码    
 		source   来源
 
 ## 用户基本信息
