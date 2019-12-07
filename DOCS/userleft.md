@@ -8,3 +8,8 @@
 		action:userhotsearch
 		userid 用户id
 
+## 最近搜索
+	参数：
+		action:userlatelysearch
+		userid 用户id
+

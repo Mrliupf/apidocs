@@ -1,6 +1,17 @@
 ## api 
 	测试地址：http://192.168.1.118/api/xm/execobj
 
+## 注册
+	参数：
+		action:register
+		phone 电话
+		emial 邮箱
+		password 密码
+		companyname 公司名称
+		contact 联系人
+		cityid 城市id
+		source 来源
+
 ## 登录
     参数：
 		action:login
@@ -42,6 +53,22 @@
 		action:userchilddelete
 		userid 用户id
 		childuserid 子账号id
+
+## 邮箱配置展示
+	参数:
+		action:useremailshow
+		userid 用户id
+		
+
+## 邮箱配置
+	参数:
+		action:useremailsetting
+		userid 用户id
+		contact 联系人
+		email 邮箱
+		emailpwd 邮箱密码
+		smtp smtp服务器
+		
 
 
 

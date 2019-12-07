@@ -4,3 +4,8 @@
 - [侧边栏用户信息](DOCS/userleft)
 - [我的收藏](DOCS/tag)
 - [社媒搜](DOCS/socialmedia)
+- [企业搜](DOCS/enterprise)
+- [一键搜](DOCS/keysearch)
+- [贸易搜](DOCS/trade)
+- [通用接口](DOCS/common)
+- [笔记](DOCS/mark)
