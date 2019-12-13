@@ -464,38 +464,45 @@ prefix 前缀搜索（性能较差，扫描所有倒排索引）
 
 ## 文档样例
 		{
-		 "tradeno": "D05AC788A6344A6DAA478DAFA243B14D",
-          "origimporterid": "EC91A4B0A4BF4B07834625968CA010C3",
-          "importerid": "735F5EDDE1C14B4C8AE53DA794A665AD",
-          "origexporterid": "5B853FC0FD5C4BC9BF440611ED99065C",
-          "exporterid": "9CCEED4555614E87AF0468276B0A4B81",
-          "inout": "import",
-          "source": "US",
+		 "tradeno": "D05AC788A6344A6DAA478DAFA243B14D",            提单号
+          "origimporterid": "EC91A4B0A4BF4B07834625968CA010C3",    原始采购商id
+          "importerid": "735F5EDDE1C14B4C8AE53DA794A665AD",       采购商id
+          "origexporterid": "5B853FC0FD5C4BC9BF440611ED99065C",    原始供应商id
+          "exporterid": "9CCEED4555614E87AF0468276B0A4B81",      供应商id
+          "inout": "import",              进出口
+          "source": "US",              数据源
           "regdate": "2019-07-30",     日期	
           "hscode": "200979",          HS编码	
           "productdetail": "ORGANIC APPLE JUICE CONCENTRATE",   商品描述	
-          "customs": null,
-          "manufacturer": null,
-          "portorigin": "VALENCIA",
-          "portdest": "LONG BEACH",
-          "origincountry": "JP, JAPAN",
+          "customs": null,            关区
+          "manufacturer": null,            制造商
+          "portorigin": "VALENCIA",        起运港
+          "portdest": "LONG BEACH",         卸载港口
+          "origincountry": "JP, JAPAN",           产国
           "destcountry": null,
-          "salecountry": null,
+          "salecountry": null,           出口国       
           "blnumber": "BARSMELG19401719",  提单号	
-          "notifyparty": "ELDINAR GIDA MADDELERI",
-          "notifypartyaddress": "ITH IHR TIC VE SAN A S CIVRIL YOLU CD 3 KM DINAR ",
-          "brand": null,
-          "containerid": "SZLU9484402",
-          "marksnumbers": "ORGANIC APPLE JUICE CONCENTRATE",
-          "count": 96,
-          "money": 0,
-          "weight": 28128,
-          "buyername": "EZ PORT CORP",    
-          "suppliername": "ELDINAR GIDA MADDELERI",
-          "importercountry": "US",
-          "exportercountry": "JP",
-          "buyeraddress": "65 HORRISTOWN RD STE#304B ",
-          "supplieraddress": "ITH IHR TIC VE SAN A S CIVRIL YOLU CD 3 KM DINAR ",
+          "notifyparty": "ELDINAR GIDA MADDELERI",     通知人名称	
+          "notifypartyaddress": "ITH IHR TIC VE SAN A S CIVRIL YOLU CD 3 KM DINAR ",      通知人地址	
+          "brand": null,                  品牌
+          "containerid": "SZLU9484402",     集装箱号	
+          "marksnumbers": "ORGANIC APPLE JUICE CONCENTRATE",  唛头描述	
+          "count": 96,  数量
+          "money": 0,    金额
+          "weight": 28128,  重量
+          "buyername": "EZ PORT CORP",     采购商
+          "suppliername": "ELDINAR GIDA MADDELERI",  供应商	
+          "importercountry": "US",         采购商国家
+          "exportercountry": "JP",         供应商国家
+          "buyeraddress": "65 HORRISTOWN RD STE#304B ",   采购商地址   	 
+          "supplieraddress": "ITH IHR TIC VE SAN A S CIVRIL YOLU CD 3 KM DINAR ",     供应商地址	 	
           "rawimporter": "EZ PORT CORP.",           	 原始采购商
-          "rawexporter": "ELDINAR GIDA MADDELERI" 
+          "rawexporter": "ELDINAR GIDA MADDELERI"     原始供应商	
 		}
+
+
+
+##    yyit.site.tradecenter ->CompanyContacter2  联系人限制
+       详情页 查询限制
+
+      tradeno 

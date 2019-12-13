@@ -85,7 +85,29 @@
 ## 公司合并
 	参数：
 		action:tradecompanymerge
- 
+		userid 用户id
+		searchtype 搜索类型 公司（buyername）/产品（productdetail）/新增采购商（buyernew）/地址（buyeraddress）
+		country 国家编码
+		inout 进出口 进口（import）/出口（export）
+		keyword 搜索词
+		startdate 开始时间
+		enddate 结束时间
+		pageindex 页码
+		pagesize 每页显示数量
+		sortcolumn 排序列
+						tradecount 次数
+						tradetatalcount 总次数
+						tradecountpercent 百分比
+						tradecountry 国家数量
+						tradepartner 交易伙伴数量
+						money 金额
+						weight 重量
+						number 数量
+		sorttype 排序方式  升序（asc）/降序（desc）
+		filterword 筛选词
+ 		
+ 		maincompanyid 主id
+ 		companyidarray 公司id数组
 
 
 

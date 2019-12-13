@@ -17,7 +17,7 @@
 		userid 用户id
 		companyname 公司名称
 		companyid 公司id
-		companytype 公司类型
+		companytype 公司类型   0采购商，1供应商
 		country 国家编码
 
 ##	执行合并搜索
@@ -30,6 +30,8 @@
 		hscode hs编码
 		condition 或|与 对应 1：0
 		companyidarray 公司id数组
+		currenttradetype  点击的是采购商还是供应商
+		country  数据源国家
 		pagesize 每页显示条数
 
 ## 执行合并搜索缓存请求接口
@@ -43,8 +45,11 @@
 		hscode hs编码
 		condition 或|与 对应 1：0
 		companyidarray 公司id数组
+		currenttradetype  点击的是采购商还是供应商
+		country  数据源国家
 		pageindex 页码
 		pagesize 每页显示条数
+
 
 ## 交易伙伴交易详情
 	参数：
