@@ -32,6 +32,7 @@
 		companyidarray 公司id数组
 		currenttradetype  点击的是采购商还是供应商
 		country  数据源国家
+		inout 进口（import） 出口（export）
 		pagesize 每页显示条数
 
 ## 执行合并搜索缓存请求接口
@@ -67,6 +68,9 @@
 		companyid 公司ip
 		tradetype 进出口类型 export/import
 
+		currenttradetype  点击的是采购商还是供应商
+		country  数据源国家
+
 ## 交易产品详情
 	参数:
 		action:enterprisetradeproductdetail
@@ -100,6 +104,9 @@
 		tradetype 进出口类型 export/import
 		hscodedetail 当前行具体的hs编码
 		productdetail 当前行产品具体描述		
+
+		currenttradetype  点击的是采购商还是供应商
+		country  数据源国家
 
 ## 每笔交易单详情
 	参数:

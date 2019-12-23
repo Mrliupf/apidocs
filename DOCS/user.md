@@ -12,6 +12,21 @@
 		cityid 城市id
 		source 来源
 
+## 忘记密码
+	参数:
+		action:userforgotpwd
+		username 用户名
+		email 用户默认邮箱
+
+
+## 确认重置密码
+	参数:
+		action:userresetpwdbyemail
+		username 用户名
+        password 密码
+        token  url中的token
+        isurl 验证url地址是否有效，  验证url时 = 1 默认为空
+ 
 ## 登录
     参数：
 		action:login
