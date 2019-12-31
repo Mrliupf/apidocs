@@ -39,7 +39,12 @@
 	参数:
 		action:enterprisetradeanalywithpage
 		userid 用户id
-		tradetype  国家分析（country）/伙伴分析（partner）/产品分析（product）/年度贸易（year）/交易圈（tradecircly）
+		tradetype 
+				 国家分析（country）
+			 	 伙伴分析（partner）
+			 	 产品分析（product）
+			 	 年度贸易（year）
+			 	 交易圈（tradecircly）
 		startdate 开始时间
 		enddate 结束时间 搜索时间不能超过三年
 		product 产品关键词搜索
@@ -50,6 +55,16 @@
 		country  数据源国家
 		pageindex 页码
 		pagesize 每页显示条数
+
+
+		sortcolumn 排序列    
+					金额（money）
+					数量(number)
+					重量（weight）
+					频次（tradecount）
+					频次占比（tradecountpercent）
+		sorttype 排序方式  升序(asc)/降序(desc)
+
 
 
 ## 交易伙伴交易详情
@@ -70,6 +85,16 @@
 
 		currenttradetype  点击的是采购商还是供应商
 		country  数据源国家
+		inout 进口（import)/出口（export）
+		tradecountry 交易国家
+
+		sortcolumn 排序列   
+				 金额（money）
+				 数量(number)
+				 重量（weight）
+				 时间（date）
+				 频次（tradecount）
+		sorttype 排序方式  升序(asc)/降序(desc)
 
 ## 交易产品详情
 	参数:
@@ -87,6 +112,13 @@
 		tradetype 进出口类型 export/import
 		hscodedetail 当前行具体的hs编码
 		productdetail 当前行产品具体描述
+
+		sortcolumn 排序列    
+					金额（money）
+					数量(number)
+					重量（weight）
+					时间（date）
+		sorttype 排序方式  升序(asc)/降序(desc)
 
 ## 交易产品交易国家详情
 	参数:

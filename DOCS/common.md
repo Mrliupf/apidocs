@@ -21,3 +21,10 @@
 		action:tradecountrydate
 		userid 用户id
 		
+## 获取供应商或采购商的联系人信息
+	参数：
+		action：tradedetailcontacter
+		userid 用户id
+		country 国家code
+		companyid 公司id
+		type  查询联系人   1 参考联系人，0 自带联系人

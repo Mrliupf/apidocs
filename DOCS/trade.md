@@ -81,6 +81,7 @@
 						number 数量
 		sorttype 排序方式  升序（asc）/降序（desc）
 		filterword 筛选词
+		inout 进出口
 
 ## 公司合并
 	参数：

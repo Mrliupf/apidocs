@@ -69,10 +69,15 @@
 		filterword 筛选词
 		country 国家code
 
+		inout 进出口
 		companyid 公司id
 		detailtype 点击的那个列 
 					频次（tradecount)
 					贸易国家（tradecountry）
 					贸易搜伙伴（tradepartner）
 		searchcolumn 按字段搜索 搜公司（ companyname）
+
+
+		sortcolumn 排序列    金额（money）/数量(number)/重量（weight）/ 时间(date)
+		sorttype 排序方式  升序(asc)/降序(desc)
 
