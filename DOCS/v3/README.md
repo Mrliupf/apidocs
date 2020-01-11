@@ -29,5 +29,13 @@
                   别人笑我忒疯癫，我笑自己命太贱；  
                   不见满街漂亮妹，哪个归得程序员？
 -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
 <img src="https://wx4.sinaimg.cn/mw690/6a22f637ly1g8hnopkesfj20v61ji7h0.jpg">
-sdakl
+</body>
+</html>
+
