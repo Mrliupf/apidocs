@@ -1,5 +1,5 @@
-<!-- - [首页](DOCS/aaa)
-- [指南](docs/bbb) -->
+<!-- - [首页](DOCS/AAA)
+- [指南](DOCS/BBB) -->
 - [个人中心](DOCS/user)
 - [侧边栏用户信息](DOCS/userleft)
 - [我的收藏](DOCS/tag)

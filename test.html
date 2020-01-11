@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<title></title>
+</head>
+<body>
+
+</body>
+
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.13.0/lib/index.js"></script>
+<script type="text/javascript">
+	
+var jsonData = {
+  '北美洲': [
+    {
+      'name': '美国',
+      'nameen': 'United States',
+      'code': 'US'
+    },
+    {
+      'name': '墨西哥',
+      'nameen': 'Mexico',
+      'code': 'MX'
+    },
+    {
+      'name': '加拿大',
+      'nameen': 'Canada',
+      'code': 'CA'
+    }
+  ],
+  '欧洲': [
+    {
+      'name': '俄罗斯',
+      'nameen': 'Russian Federation',
+      'code': 'RU'
+    },
+    {
+      'name': '乌克兰',
+      'nameen': 'Ukraine',
+      'code': 'UA'
+    },
+    {
+      'name': '德国',
+      'nameen': 'Germany',
+      'code': 'DE'
+    },
+    {
+      'name': '西班牙',
+      'nameen': 'Spain',
+      'code': 'ES'
+    },
+    {
+      'name': '英国',
+      'nameen': 'Britain',
+      'code': 'GB'
+    },
+    {
+      'name': '波兰',
+      'nameen': 'Poland',
+      'code': 'PL'
+    },
+    {
+      'name': '俄罗斯(陆运)',
+      'nameen': 'Russian Federation',
+      'code': 'RU_RD'
+    }
+  ],
+  '中美洲': [
+    {
+      'name': '洪都拉斯',
+      'nameen': 'Honduras',
+      'code': 'HN'
+    },
+    {
+      'name': '尼加拉瓜',
+      'nameen': 'Nicaragua',
+      'code': 'NI'
+    },
+    {
+      'name': '萨尔瓦多',
+      'nameen': 'El Salvador',
+      'code': 'SV'
+    },
+    {
+      'name': '危地马拉',
+      'nameen': 'Guatemala',
+      'code': 'GT'
+    }
+  ],
+  '亚洲': [
+    {
+      'name': '中国',
+      'nameen': 'China',
+      'code': 'CN'
+    },
+    {
+      'name': '巴基斯坦',
+      'nameen': 'Pakistan',
+      'code': 'PK'
+    },
+    {
+      'name': '韩国',
+      'nameen': 'Korea (South)',
+      'code': 'KR'
+    },
+    {
+      'name': '印度(孟买)',
+      'nameen': 'India(MM)',
+      'code': 'IN_MM'
+    },
+    {
+      'name': '斯里兰卡',
+      'nameen': 'Sri Lanka',
+      'code': 'LK'
+    },
+    {
+      'name': '越南',
+      'nameen': 'Vietnam',
+      'code': 'VN'
+    },
+    {
+      'name': '中国台湾',
+      'nameen': 'Taiwan',
+      'code': 'TW'
+    },
+    {
+      'name': '日本',
+      'nameen': 'Japan',
+      'code': 'JP'
+    },
+    {
+      'name': '菲律宾',
+      'nameen': 'Philippines',
+      'code': 'PH'
+    },
+    {
+      'name': '印度(全港)',
+      'nameen': 'India(QG)',
+      'code': 'IN_QG'
+    },
+    {
+      'name': '印度尼西亚',
+      'nameen': 'Indonesia',
+      'code': 'ID'
+    },
+    {
+      'name': '乌兹别克斯坦',
+      'nameen': 'Uzbekistan',
+      'code': 'UZ'
+    },
+    {
+      'name': '哈萨克斯坦',
+      'nameen': 'Kazakhstan',
+      'code': 'KZ'
+    }
+  ],
+  '拉丁美洲': [
+    {
+      'name': '阿根廷',
+      'nameen': 'Argentina',
+      'code': 'AR'
+    },
+    {
+      'name': '巴拉圭',
+      'nameen': 'Paraguay',
+      'code': 'PY'
+    },
+    {
+      'name': '巴拿马',
+      'nameen': 'Panama',
+      'code': 'PA'
+    },
+    {
+      'name': '玻利维亚',
+      'nameen': 'Bolivia',
+      'code': 'BO'
+    },
+    {
+      'name': '厄瓜多尔',
+      'nameen': 'Ecuador',
+      'code': 'EC'
+    },
+    {
+      'name': '哥伦比亚',
+      'nameen': 'Colombia',
+      'code': 'CO'
+    },
+    {
+      'name': '哥斯达黎加',
+      'nameen': 'Costa Rica',
+      'code': 'CR'
+    },
+    {
+      'name': '秘鲁',
+      'nameen': 'Peru',
+      'code': 'PE'
+    },
+    {
+      'name': '委内瑞拉',
+      'nameen': 'Venezuela',
+      'code': 'VE'
+    },
+    {
+      'name': '乌拉圭',
+      'nameen': 'Uruguay',
+      'code': 'UY'
+    },
+    {
+      'name': '智利',
+      'nameen': 'Chile',
+      'code': 'CL'
+    },
+    {
+      'name': '巴西',
+      'nameen': 'Brazil',
+      'code': 'BR'
+    }
+  ],
+  '非洲': [
+    {
+      'name': '埃塞俄比亚',
+      'nameen': 'Ethiopia',
+      'code': 'ET'
+    },
+    {
+      'name': '乌干达',
+      'nameen': 'Uganda',
+      'code': 'UG'
+    },
+    {
+      'name': '肯尼亚',
+      'nameen': 'Kenya',
+      'code': 'KE'
+    }
+  ]
+}
+
+</script>
+<div id="app">
+  <el-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange">全选</el-checkbox>
+<template>
+  <div style="margin: 15px 0; width: 800px;">
+    <span>亚洲</span>
+  <el-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
+    <el-checkbox v-for="city in cities.欧洲" :label="city.name" :key="city.name">{{city.name}}</el-checkbox>
+  </el-checkbox-group>
+   </div>
+</template>
+ <template>
+  <div style="margin: 15px 0; width: 800px;">
+    <span>中美洲</span>
+  <el-checkbox-group v-model="checkedCities" @change="handleCheckedCitiesChange">
+    <el-checkbox v-for="city in cities.中美洲" :label="city.name" >{{city.name}}</el-checkbox>
+  </el-checkbox-group>
+   </div>
+</template>
+</div>
+
+<script type="text/javascript">
+
+
+	var  aa={};
+   for(var i in jsonData)
+   {
+   	var gj=[];
+   	 for(var ii in jsonData[i])
+   	 {
+   	 	gj.push(jsonData[i][ii].name);
+   	}
+   	   aa[i]=gj;
+   }
+	var  guojia1=aa.中美洲.concat(aa.欧洲);
+	console.log(guojia1);
+  var Main = {
+    data() {
+      return {
+        checkAll: false,
+        checkedCities: [],
+        cities: jsonData,
+        isIndeterminate: true,
+        guojia:guojia1
+      };
+    },
+    methods: {
+      handleCheckAllChange(val) {
+        this.checkedCities = val ? guojia1 : [];
+        this.isIndeterminate = false;
+      },
+      handleCheckedCitiesChange(value) {
+        let checkedCount = value.length;
+        this.checkAll = checkedCount === this.guojia.length;
+        this.isIndeterminate = checkedCount > 0 && checkedCount < this.guojia.length;
+      }
+    }
+  };
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app')
+
+</script>
+
+</html>

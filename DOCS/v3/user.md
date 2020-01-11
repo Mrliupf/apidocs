@@ -39,10 +39,6 @@
 		action:userinfo
 		userid 用户id
 
-		type 显示更多数据时填充此参数  登录日志（loginlog）/常用搜索（searchlog）
-		pageindex  页码
-		pagesize  显示页数
-
 ## 修改密码
 	参数：
 		action:userupdatepwd

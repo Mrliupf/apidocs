@@ -64,6 +64,8 @@
 					频次（tradecount）
 					频次占比（tradecountpercent）
 		sorttype 排序方式  升序(asc)/降序(desc)
+		
+		filterword 筛选词
 
 
 

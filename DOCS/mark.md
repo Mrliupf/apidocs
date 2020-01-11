@@ -479,7 +479,7 @@ prefix 前缀搜索（性能较差，扫描所有倒排索引）
           "portorigin": "VALENCIA",        起运港
           "portdest": "LONG BEACH",         卸载港口
           "origincountry": "JP, JAPAN",           产国
-          "destcountry": null,
+          "destcountry": null,      目的国
           "salecountry": null,           出口国       
           "blnumber": "BARSMELG19401719",  提单号	
           "notifyparty": "ELDINAR GIDA MADDELERI",     通知人名称	
