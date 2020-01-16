@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+   <!-- <script src="lib/jquery/dist/jquery.min.js"></script>-->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+   <!--  <script src="lib/jquery-form/dist/jquery.form.min.js"></script>-->
+   <script src="https://cdn.bootcss.com/jquery.form/4.2.2/jquery.form.min.js"></script>
+    <script type="text/javascript">
+        function AjaxFormDataUploadfile() {
+            var fileUpload = $("#files").get(0);
+            var files = fileUpload.files;
+            var data = new FormData();       
+            for (var i = 0; i < files.length; i++) {
+                data.append("files", files[i]);
+            }
+
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:54727/api/xm/Upload",
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (message) {
+                    alert("success");
+                },
+                error: function () {
+                    alert("上传文件出现错误！");
+                }
+            });
+        }  </script> 
+</head>
+<body>
+    <form id="myform" method="post" action="/api/files/iform" enctype="multipart/form-data">               
+         <input type="file" id="files" name="files" multiple /> <br /><br />  
+         <input id="formupload" type="button" value="Form Data Upload" onclick="AjaxFormDataUploadfile();" /><br /><br />        
+    </form>
+</body>
+</html>
