@@ -105,3 +105,23 @@
 		action:emailcontactstemplatelist
 		userid 用户id
 
+## 模板管理列表
+	参数:
+		action:emailtemplatelist
+		userid 用户id
+		pageindex 页码
+		pagesize 每页显示数量
+
+## 任务管理列表
+	参数：
+		action:emailtaskmanagelist	
+		userid 用户id
+		pageindex 页码
+		pagesize 每页显示数量
+
+## 任务管理列表删除
+	参数：
+		action:emailtaskmanagedelete
+		userid 用户id
+		taskids 任务id，数组
+
